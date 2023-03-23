@@ -1,38 +1,117 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
 .App {
-  text-align: center;
+  background: linear-gradient(0deg, rgba(33, 103, 0, 0.46), rgba(33, 103, 0, 0.46)), linear-gradient(179.21deg, #001265 0.69%, rgba(152, 122, 235, 0) 82.41%);
+  padding: 60px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* font-size: 80px;
+  font-weight: 100;
+  color: rgb(156, 214, 255); */
+  justify-content: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.top-top {
+  margin-bottom: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.top-bottom {
+  margin: auto;
+}
+
+.top-bottom img {
+  box-shadow: 0px 0px 72px 4px rgba(28, 47, 25, 0.62);
+}
+
+.play-area {
+  margin-top: 100px;
+}
+
+.play-area-controller ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.play-area-controller li {
+  font-weight: 400;
+  font-size: 20px;
+  padding: 20px 40px;
+}
+
+.play-area-controller li:hover {
+  cursor: pointer;
+}
+
+.active {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 33.9%, rgba(0, 0, 0, 0) 87.08%), #2A6125;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.line {
+  display: block;
+  background: white;
+  width: 60px;
+  height: 6px;
+  margin: 10px 20px;
+}
+
+.ham2 {
+  width: 30px;
+}
+
+.playlist-container {
+  margin: 100px;
+}
+
+.audio-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.audio-wrapper {
+  border-radius: 10px;
+  background: linear-gradient(91.41deg, rgba(44, 142, 54, 0.95) 1.5%, rgba(47, 158, 59, 0) 86.86%), #326D69;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #b6ffd1;
+  padding: 50px;
+}
+
+.audio-wrapper h2 {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .App {
+    padding: 30px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .top-bottom img {
+    height: 250px;
+  }
+
+  .play-area-controller li {
+    font-weight: 400;
+    font-size: 13px;
+    padding: 10px 25px;
+  }
+
+  .playlist-container {
+    margin: 80px 0px;
+  }
+
+  .audio-container {
+    display: flex;
+    flex-direction: column;
   }
 }
